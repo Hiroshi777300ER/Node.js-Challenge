@@ -1,3 +1,18 @@
+function Character(name, strength, hitpoints) {
+    this.name = name;
+    this.strength = strength;
+    this.hitpoints = hitpoints;
+    }
+
+
+    Character.prototype.printStats = function()  {
+        console.log(`Name: ' ${this.name} 
+    Strength:  ${this.strength}
+    HitPoints:  ${this.hitpoints}`
+        );
+        console.log('\n------------------\n');
+    };
+
 const inquirer = ('inquirer');
 const fs = require('fs');
 const { message } = require('statuses');
